@@ -12,8 +12,8 @@
 # etc
 
 def zero_checker(prime_num):
-    zeros = int(prime_num / 5)
-    additional_zero = int(prime_num / 25)
+    zeros = prime_num // 5
+    additional_zero = prime_num // 25
     total_zeros = zeros + additional_zero
   
     return total_zeros
@@ -24,7 +24,6 @@ def main():
     for x in range(num_tests):
         prime_num = int(input())
         print(zero_checker(prime_num))
-        print("")
 
 
 main()
